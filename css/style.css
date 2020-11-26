@@ -1,0 +1,324 @@
+/*
+--------------------------------------------------------------------------------
+|                                VARIABLES                                        |
+--------------------------------------------------------------------------------
+ */
+/*
+--------------------------------------------------------------------------------
+|                                AJUSTE GENERAL                                |
+--------------------------------------------------------------------------------
+ */
+* {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0; }
+
+/*
+--------------------------------------------------------------------------------
+|                                HEADER                                        |
+--------------------------------------------------------------------------------
+ */
+header {
+  position: relative; }
+
+nav {
+  margin-top: 0px;
+  background-image: linear-gradient(gray, white); }
+
+ol {
+  list-style: none;
+  height: 100px;
+  text-align: center; }
+  ol li {
+    display: inline-block;
+    font-size: 30px;
+    width: 20%;
+    height: 100%;
+    line-height: 80px;
+    font-family: 'Sansita Swashed', cursive; }
+    ol li a {
+      text-decoration: none;
+      color: blanchedalmond; }
+
+ol li:hover {
+  background-color: #ffdf28;
+  border-radius: 10px; }
+
+a:hover {
+  text-decoration: none;
+  color: blanchedalmond; }
+
+#imagen {
+  position: absolute;
+  top: 10px;
+  left: 30px; }
+
+#user {
+  position: absolute;
+  right: 15px;
+  top: 50px; }
+
+#shoppingcar {
+  position: absolute;
+  right: 60px;
+  top: 50px; }
+
+#shoppingcar:hover {
+  background-color: #ffdf28;
+  border-radius: 20px; }
+
+#user:hover {
+  background-color: #ffdf28;
+  border-radius: 20px; }
+
+/*
+--------------------------------------------------------------------------------
+|                           PAG PRINCIPAL                                      |
+--------------------------------------------------------------------------------
+ 
+ PRIMERA SECCION */
+/* SEGUNDA SECCION */
+.planet {
+  animation-name: planeta;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes planeta {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.animate__bounce {
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+.animate__flash {
+  animation-duration: 10s;
+  animation-iteration-count: infinite; }
+
+section {
+  display: flex;
+  justify-content: space-around; }
+  section div {
+    width: 400px; }
+    section div img {
+      padding-left: 50px; }
+
+/*
+--------------------------------------------------------------------------------
+|                                NOSOTROS                                      |
+--------------------------------------------------------------------------------
+ */
+.container-fluid {
+  height: 100vh; }
+
+.row {
+  margin-top: 100px;
+  margin-left: 180px; }
+
+.quienS {
+  padding-top: 10px;
+  opacity: 0.2;
+  transition: 1s;
+  width: 1200PX;
+  height: 100PX;
+  display: block;
+  margin: auto; }
+
+.quienS:hover {
+  opacity: 0.5; }
+
+.btn:focus {
+  margin-top: 100px; }
+
+/*
+--------------------------------------------------------------------------------
+|                          NUESTROS PRODUCTOS                                  |
+--------------------------------------------------------------------------------
+ */
+h2 {
+  text-align: center;
+  font-family: 'Sansita Swashed', cursive; }
+
+.contenedoruno {
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 10px;
+  width: 460px;
+  display: flex;
+  justify-content: center; }
+
+.hijouno {
+  padding-left: 10px;
+  padding-right: 20px; }
+
+.uno {
+  display: flex;
+  justify-content: space-evenly; }
+
+.contenedordos {
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 10px;
+  width: 460px;
+  display: flex;
+  justify-content: center;
+  margin-right: 40px; }
+
+.hijodos {
+  padding-left: 10px;
+  padding-right: 20px; }
+
+.dos {
+  display: flex;
+  justify-content: center; }
+
+.contenedortres {
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 10px;
+  width: 460px;
+  display: flex;
+  justify-content: center; }
+
+.hijotres {
+  padding-left: 10px;
+  padding-right: 20px; }
+
+.tres {
+  display: flex;
+  justify-content: space-evenly; }
+
+/* .imgChica{
+    border-radius: 15px;
+} */
+.botonCompra {
+  background-color: rgba(112, 111, 101, 0.363);
+  height: 50px;
+  width: 220px;
+  color: blanchedalmond;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none; }
+
+.botonCompra:hover {
+  color: black;
+  background-color: #ffdf28;
+  border: 1px black solid; }
+
+/*
+--------------------------------------------------------------------------------
+|                                GALERIA                                       |
+--------------------------------------------------------------------------------
+ */
+.photo {
+  height: 100%;
+  width: 100%; }
+
+.container {
+  display: grid;
+  margin: 50px;
+  height: 100vh;
+  grid-template-columns: 1fr 1.5fr 1fr 1.5fr;
+  grid-template-rows: 1fr 1.5fr 1fr 1.5fr;
+  grid-template-areas: "one two three four" "one two three four" "five five six six" "five five six six"; }
+
+.imagen1 {
+  grid-area: one; }
+
+.imagen2 {
+  grid-area: two; }
+
+.imagen3 {
+  grid-area: three; }
+
+.imagen4 {
+  grid-area: four; }
+
+.imagen5 {
+  grid-area: five; }
+
+.imagen6 {
+  grid-area: six; }
+
+/*
+GALERIA HOVER
+ */
+.imagen1:hover {
+  height: 100vh;
+  width: 600px;
+  transition: all 2s; }
+
+.imagen2:hover {
+  height: 100vh;
+  width: 800px; }
+
+.imagen3:hover {
+  height: 100vh;
+  width: 600px; }
+
+.imagen4:hover {
+  height: 100vh;
+  width: 800px; }
+
+.imagen5:hover {
+  height: 50vh;
+  width: 50vh; }
+
+.imagen6:hover {
+  height: 50vh;
+  width: 50vh; }
+
+/*
+--------------------------------------------------------------------------------
+|                                CONTACTENOS                                   |
+--------------------------------------------------------------------------------
+ */
+fieldset {
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.404);
+  border: none;
+  border-radius: 15px;
+  width: 600px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  text-align: center;
+  color: #ffdf28; }
+
+.input {
+  background-color: white;
+  border-radius: 10px;
+  height: 20px;
+  width: 300px;
+  color: black; }
+
+.boton {
+  background-color: #ffdf28;
+  color: black;
+  font-size: 15px;
+  height: 50px;
+  width: 100px;
+  border-radius: 15px; }
+
+textarea {
+  background-color: white;
+  border-radius: 10px;
+  width: 300px; }
+
+/*
+--------------------------------------------------------------------------------
+|                                FOOTER                                        |
+--------------------------------------------------------------------------------
+ */
+footer {
+  height: 100px;
+  background-image: linear-gradient(gray, white); }
+
+footer p {
+  color: black;
+  text-align: center; }
